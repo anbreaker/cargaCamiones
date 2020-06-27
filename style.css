@@ -1,9 +1,19 @@
 .container {
   display: flex;
-  justify-content: space-evenly;
-  margin: 10vh;
+  justify-content: space-between;
+  margin: 5vh;
+  padding: 0;
+  /* border: 2px solid yellow; */
 }
 
 .form-group {
   font-size: 1.5rem;
+  text-align: center;
+  width: 49%;
+  /* border: 2px solid coral; */
+}
+
+.item {
+  align-self: center;
+  margin-left: 0.4%;
 }
