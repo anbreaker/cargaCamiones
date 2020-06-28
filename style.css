@@ -2,20 +2,10 @@
   font-size: 1.85rem;
   display: flex;
   justify-content: center;
-  margin: 5vh;
+  margin: 2vh;
   padding: 0;
-  /* border: 2px solid yellow; */
 }
 
 .container>a {
   font-size: 2rem;
-}
-
-.form-group {
-  font-size: 1.5rem;
-}
-
-.item {
-  align-self: center;
-  margin-left: 0.4%;
 }

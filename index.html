@@ -17,55 +17,39 @@
     </nav>
 
     <!-- Contenido -->
-
     <div class="container">
       <div class="col-md-6">
-        <form id="formContenedores">
-          <div class="form-group">
-            <label class="col-form-label text-primary" for="inputDefault">
-              Contenedores</label
-            >
-            <input
-              type="number"
-              id="tara"
-              class="form-control"
-              placeholder="Tara Contenedores"
-            />
-          </div>
-        </form>
+        <label class="col-form-label text-primary">Contenedores</label>
+        <input
+          type="number"
+          id="taraContenedor"
+          placeholder="Tara Contenedores"
+          ondblclick="alerta()"
+        />
       </div>
 
       <div class="col-md-6">
-        <form id="formCisternas">
-          <div class="form-group">
-            <label class="col-form-label text-success" for="inputDefault"
-              >Cisternas</label
-            >
-            <input
-              type="number"
-              id="tara"
-              class="form-control"
-              placeholder="Tara Cisternas"
-            />
-          </div>
-        </div>
-      </div>
-      
-      <div class="container">
-        <div class="col-md-12">
-          <button type="submit" class="btn btn-success btn-block">Calcular</button>
-        </div>
-      </div>
-    </form>
-
-    <div class="container">
-      <div class="col-md-12">
-        <div class="task">
-          <p>Aqui el resultado</p>
-        </div>
+        <label class="col-form-label text-success">Cisternas</label>
+        <input type="number" id="taraCisterna" placeholder="Tara Cisternas" />
       </div>
     </div>
 
+    <div class="container">
+      <div class="col-md-12">
+        <input
+          class="btn btn-success btn-block"
+          type="button"
+          value="Calcular"
+          onclick="ver()"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="task"></div>
+    </div>
+
+    <!-- script -->
     <script src="script.js"></script>
   </body>
 </html>

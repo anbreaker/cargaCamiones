@@ -1,8 +1,17 @@
-document.getElementById('formContenedores').addEventListener('submit', ver);
+let taraContenedor = document.getElementById('taraContenedor');
+taraContenedor.addEventListener('submit', ver);
 
 function ver() {
-  console.log('mirando');
-  alert('ver');
+  if (taraContenedor) {
+    console.log(`taraContenedor ${taraContenedor}`);
+  }
+  if (taraCisterna !== '') {
+    console.log(`taraCisterna ${taraCisterna}`);
+  }
+}
+
+function muestraMensaje() {
+  console.log('Gracias por pinchar');
 }
 
 const pesoCisternaTotal = 40800;
@@ -30,8 +39,8 @@ function calculoCisternas(tara) {
     return divisionCarga;
   } else {
     divisionCarga = divisionCarga + 10;
-    console.log('divisionCarga -->', divisionCarga);
   }
+  console.log(`Cargas Cisternas --> ${divisionCarga}`);
 }
 
 // console.log('Cargar -->', calculoCisternas(14985));
@@ -42,8 +51,10 @@ function calculoContenedores(tara) {
   if (segundaCarga > 7000) {
     segundaCarga = 7000;
   }
+
+  console.log(`2ª Carga Contenedor --> ${segundaCarga}`);
   return segundaCarga;
 }
 
-// console.log('2ª Carga Contenedor -->', calculoContenedores(17530));
-// console.log('2 Cargas Cisternas -->', calculoCisternas(14530));
+// calculoContenedores(17660);
+// calculoCisternas(15660);
